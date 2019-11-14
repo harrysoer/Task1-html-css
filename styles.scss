@@ -17,8 +17,19 @@ $border_light: 1px solid $color_light-gray;
 //metrics
 $metrics_border-radius: 4px;
 
+// GENERAL STYLING
 body { 
     font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition: 300ms ease-in-out all;
+    opacity: 1;
+
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .widget-container {

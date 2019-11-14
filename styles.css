@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.widget-container {
+  max-width: 350px;
+  min-width: 320px;
+}
+
+.tool-tip {
+  color: #F2F2F2;
+  font-size: 14px;
+  line-height: 23px;
+}
+.tool-tip__box {
+  background: #333333;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.tool-tip__arrow {
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: 10px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #333333;
+}
+
+.card {
+  font-size: 16px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-top: 8.44px;
+  height: fit-content;
+  padding: 16px 24px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /** Progress Bar **/
+  /** Countdown Text **/
+  /** Form **/
+}
+.card__progress {
+  height: 8px;
+  background: #E5E5E5;
+}
+.card__progress .progress__fill {
+  height: 100%;
+  width: 70%;
+  background: #EB5757;
+}
+.card__count-down {
+  margin-bottom: 0;
+}
+.card__count-down .count-down__days {
+  color: #EB5757 !important;
+}
+.card__form {
+  display: flex;
+  justify-content: space-between;
+}
+.card__form .form__input-container {
+  display: flex;
+  width: 43%;
+  padding: 7px 8px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+}
+.card__form .form__input-container .icon {
+  color: #828282;
+  font-size: 18px;
+}
+.card__form .form__input-container input {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  width: 100%;
+}
+.card__form .form__input-container input:focus {
+  outline-width: 0;
+}
+.card__form .form__button {
+  width: 43%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #F2F2F2;
+  background: #2F80ED;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 0;
+}
+.card__question {
+  color: #56CCF2;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.buttons button {
+  width: 48%;
+  color: #828282;
+  background: color_mute-light;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 7px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

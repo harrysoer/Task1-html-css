@@ -1,0 +1,153 @@
+//colors
+$color_mute:#828282;
+$color_mute-light: #F7F7F7;
+$color_red: #EB5757;
+$color_blue: #2F80ED;
+$color_aqua: #56CCF2;
+$color_white: #F2F2F2;
+$color_black: #333333;
+$color_light-black: #4F4F4F;
+$color_gray: #E5E5E5;
+$color_light-gray: #E0E0E0;
+
+//border
+$border_dark: 1px solid $color_gray;
+$border_light: 1px solid $color_light-gray;
+
+//metrics
+$metrics_border-radius: 4px;
+
+body { 
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget-container {
+    max-width: 350px;
+    min-width: 320px;
+}
+
+.tool-tip {
+    color: $color_white;
+    font-size: 14px;
+    line-height: 23px;
+
+    &__box {
+        background: $color_black;
+        border-radius: 4px;
+        padding: 8px 16px;
+    }
+
+    &__arrow {
+        width: 0; 
+        height: 0; 
+        margin-left: auto;
+        margin-right: 10px;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid $color_black;
+    }
+}
+
+.card {
+    font-size: 16px;
+    line-height: 28px;
+    color: $color_light-black;
+    margin-top: 8.44px;
+    height: fit-content;
+    padding: 16px 24px;
+    border: $border_dark;
+    border-radius: $metrics_border-radius;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    /** Progress Bar **/
+    &__progress {
+        height: 8px;
+        background: $color_gray;
+
+        .progress__fill {
+            height: 100%;
+            width: 70%;
+            background: $color_red;
+        }
+    }
+
+    /** Countdown Text **/
+    &__count-down {
+       margin-bottom: 0;
+       .count-down__days {
+            color: $color_red !important
+        }
+    } 
+
+    /** Form **/
+    &__form{
+        display: flex;
+        justify-content: space-between;
+
+        .form__input-container {
+            display: flex;
+            width: 43%;
+            padding: 7px 8px;
+            border: $border_light;
+            border-radius: $metrics_border-radius;
+    
+            .icon{
+                color: $color_mute;
+                font-size: 18px;
+            }
+    
+            input {
+                border: none;
+                font-size: 18px;
+                font-weight: bold;
+                padding-bottom: 2px;
+                padding-left: 8px;
+                width: 100%;
+    
+                &:focus {
+                    outline-width: 0;
+                }
+            }
+        }
+    
+        .form__button {
+            width: 43%;
+            font-size: 16px;
+            font-weight: bold;
+            color: $color_white;
+            background: $color_blue;
+            border: none;
+            border-radius: $metrics_border-radius;
+            padding: 7px 0;
+        }
+    }
+
+    &__question {
+        color: $color_aqua;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+        text-decoration: none;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    button {
+        width: 48%;
+        color: $color_mute;
+        background: color_mute-light;
+        border: $border_light;
+        border-radius: $metrics_border-radius;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        padding: 7px 0;
+    }
+}
